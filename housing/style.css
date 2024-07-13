@@ -49,6 +49,10 @@ nav {
 
 /* Search bar */
 
+.cooking h1{
+    left: 50%;
+}
+
 #search-bar-container {
     width: 70%;
     height: 50px;
