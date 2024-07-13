@@ -6,12 +6,12 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image:url(office-3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(office-3.jpg);
     background-size: cover;
     font-family: sans-serif;
 }
 nav{
-    background-color:grey;
+    background-color:#ecc45f;
     width: 100%;
     height: 75px;
     color: blue;
@@ -131,7 +131,7 @@ nav{
 /* -------------------info of we are shades------------------------------ */
 .text-box{
     width: 50%;
-    color: darkblue;
+    color: rgb(0,16,8);
     position: absolute;
     top: 50%;
     left:20%;
@@ -142,9 +142,11 @@ nav{
     font-size: 62px;
 }
 .text-box p{
+    font-style: oblique;
     margin: 10px 0 40px;
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    color: #ffb700;
+   
 }
 .hero-btn{
     display: inline-block;
@@ -158,8 +160,8 @@ nav{
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #0077b6;
-    background: #0077b6;
+    border: 1px solid #ffb700;
+    background:#ffb700;
     transition: 1s;
 }
 /*----------------- our popular services(2nd section)----------------------------- */
@@ -167,6 +169,7 @@ nav{
     margin: auto;
     text-align: center;
     padding-top: 60px;
+    background-color:lightgoldenrodyellow;
 }
 h1{
     font-size: 36px;
@@ -220,7 +223,7 @@ div img:hover{
 }
 /* ----------------best customer review page---------------------- */
 .testimonial{
-    width: 80%;
+    width: 100%;
     margin:auto;
     padding-top: 100px;
     text-align: center;
@@ -233,7 +236,7 @@ div img:hover{
     margin-right: 6%;
     margin-left: 1%;
     text-align: left;
-    background-color:#FFF2D7;
+    background-color:black;
     padding: 25px;
     cursor: pointer;
     display:flex;
@@ -247,6 +250,7 @@ div img:hover{
 }
 .testimonial-col p{
     padding: 0;
+    color: white;
 }
 .testimonial-col h3{
     margin-top: 15px;
@@ -364,4 +368,116 @@ div img:hover{
     margin-bottom: 17px;
     outline: none;
     border: 1px solid #ccc;
+}
+
+/*--------------new login page-----------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.card{
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+}
+.inner-box{
+    left: 90%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background: black;
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card h2{
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn{
+    position: relative;
+}
+.submit-btn::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.card .btn{
+    margin-top: 70px;
+}
+.card a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
 }

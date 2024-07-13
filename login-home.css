@@ -11,7 +11,7 @@ header{
     font-family: sans-serif;
 }
 nav{
-    background-color:grey;
+    background-color:#ecc45f;
     width: 100%;
     height: 75px;
     color: blue;
@@ -107,7 +107,7 @@ div img:hover{
     margin-right: 6%;
     margin-left: 1%;
     text-align: left;
-    background-color:#FFF2D7;
+    background-color:lightgoldenrodyellow;
     padding: 25px;
     cursor: pointer;
     display:flex;

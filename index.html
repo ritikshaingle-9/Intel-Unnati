@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intel-Unnati</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <section>
     <header>
         <nav>
             <div class="logo">
-                <P>
-                  <span style="color:#03045e" >S</span>
+                <h1>
+                  <span style="color:#03045e">S</span>
                   <span style="color:#023e8a" >H</span>
                   <span style="color:#0077b6" >A</span>
                   <span style="color:#90e0ef" >D</span>
                   <span style="color:#caf0f8" >E</span>
                   <span style="color:#ffff" >S</span>
-                </P>  
+                </h1>  
             </div>
             <div class="menu">
                 <a href="index.html">HOME</a>
@@ -32,40 +32,63 @@
         
         <div class="text-box">
             <h1> WE ARE SHADES</h1>
-            <P>"Your Gateway to Essential Services"
+            <P><b>"Your Gateway to Essential Services"</b>
             </P>
             <a href="" class="hero-btn">visit us to know more</a>
         </div>
-<!-- login box -->
-        <div class="wrapper">
-            <form action="">
-                <h1>Login </h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Username" required>
-                    <i class="ri-function-line"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class="ri-function-line"></i>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                 
-                <button type="submit" class="btn"><a href="login-home.html">LOGIN</a></button>
 
-                <div class="register-link">
-                    <p>Don't have an account?<a href="#">Register</a></p>
+<!-- login box -->
+<section>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Your Email Id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <a href="login-home.html">click here!!!</a><br>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+                    <a href="">Forgot Password</a>
                 </div>
-            </form>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Your Name" required>
+                        <input type="email" class="input-box" placeholder="Your Email Id" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I've account</button>
+                    <a href="">Forgot Password</a>
+                </div>
+            </div>
         </div>
-    </header>
-    </section>
+    </div>
+    <script>
+        const card = document.getElementById("card");
+
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg";
+        }
+        function openLogin() {
+            card.style.transform = "rotateY(0deg";
+        }
+
+    </script>
+</section>
+</header>
+
+
+
 <!-----------------service -info--------------------->
 <section class="service-info" id="service-info">
     <h1>Our Popular Services</h1>
-    <p>"Simplifying Life's Essentials"</p>
+    <br>
 
     <div class="row">
         <div class="service-info-col">
@@ -96,14 +119,13 @@
 </section>
 <!-----------------service -info end--------------------->
 <!-- --------------best customer review--------------- -->
-<section class="testimonial" id="testimonial">
-    <h1>What Our Customer Says</h1>
-    <p>making website is now one of the easiest thing in the world.you just need to learn html,css,<br>
-        javascript and you are good to go.</p>
+<section class="testimonial" id="testimonial" style="background-color:white">
+    <h1><b>What Our Customer Says</b></h1>
+    <br><br><br>
 
     <div class="row">
         <div class="testimonial-col">
-            <img src="AU.jpG" alt="">
+            <img src="review-2.jpg" alt="">
             <div>
                 <p>"I can't say enough good things about Shades. As a busy working parent, managing transportation, healthcare, and education for my kids used to be a logistical nightmare. Shades has simplified everything.The health service has provided us with easy access to doctors and medical advice, making it so much easier to stay on top of our family's health.Shades truly is a one-stop solution for all our needs!"
                 </p>
@@ -111,7 +133,7 @@
             </div>
         </div>
         <div class="testimonial-col">
-            <img src="AU.jpG" alt="">
+            <img src="review-1.jpg" alt="">
             <div>
                 <p>"Shades has been a game-changer for me. As a small business owner, managing my finances and accessing government services was always a hassle. With Shades, I also recently moved, and the housing service helped me find the perfect place without the usual stress. Shades brings everything together seamlessly, and I couldn't be happier with the support and convenience they provide."
                 </p>
