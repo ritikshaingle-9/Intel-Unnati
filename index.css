@@ -19,9 +19,9 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-.logo p{
-    font-size:2em;
-    letter-spacing:1px;
+.logo img{
+    height:50px;
+    width: 130px;
 }
 .menu a{
     text-decoration: none;
