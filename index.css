@@ -22,6 +22,12 @@ nav{
 .logo img{
     height:50px;
     width: 130px;
+    display:flex;
+    justify-content:none;
+    border: none;
+    background: none;
+    background:none;
+    background-image:none
 }
 .menu a{
     text-decoration: none;
