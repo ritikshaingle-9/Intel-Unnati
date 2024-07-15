@@ -17,4 +17,4 @@ Transportation services for easy commuting.
 Educational resources and courses.
 Government service access for civic needs.
 
-Visit https://services-by-shades.netlify.app Website to start exploring our services.
+Visit https://services-by-shades.vercel.app/ Website to start exploring our services.
